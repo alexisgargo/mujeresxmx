@@ -1,113 +1,177 @@
-import Image from 'next/image'
+import Image from "next/image";
+import Navbar from "./components/navbar/Navbar";
+import Terms from "./components/Terms";
+import ContactButton from "./components/ContactButton";
+import KnowMoreButton from "./components/KnowMoreButton";
+import ProgressiveImage from "./components/ProgressiveImage";
+
+const Hero = () => {
+	return (
+		<div className='flex flex-grow justify-center md:inline-flex flex-col md:flex-row'>
+			<div className='flex flex-col  justify-center text-left  md:w-1/2 items-center'>
+				<div className='md:w-3/4 lg:ml-48 md:pr-36 md:h-96 flex flex-col justify-evenly md:p-0 p-4 h-fit'>
+					<span className='uppercase'>Mujeres x MÉxico CUU</span>
+					<br />
+					<div className='flex flex-col gap-y-3'>
+						<div>
+							<span className='text-4xl md:text-6xl font-semibold'>
+								Vive una vida libre, mujer.
+							</span>
+						</div>
+						<div>
+							<span className='text-base md:text-xl text-slate-500'>
+								Somos una organización defensora de los derechos humanos. Te
+								brindamos asesoría jurídica y acompañamiento durante tu proceso.
+							</span>
+						</div>
+					</div>
+					<br />
+					<ContactButton />
+				</div>
+			</div>
+			<ProgressiveImage
+				alt='Mosaico'
+				lowResSrc='/Container.svg'
+				highResSrc='/Container.svg'
+			/>
+		</div>
+	);
+};
+
+const AboutUs = () => {
+	return (
+		<div className='flex bg-secondary h-full items-center '>
+			<div className='hidden md:flex items-center justify-end lg:h-fill lg:w-1/2 pr-12 flex-shrink-0 '>
+				<Image src='/about_us.svg' height={650} width={650} alt='Mosaico' />
+			</div>
+			<div className=' text-white flex flex-col justify-evenly md:mx-28 md:pr-56 md:p-0 p-6'>
+				<span className='uppercase text-sm'>QUIÉNES SOMOS</span>
+				<br />
+				<div className='flex flex-col gap-y-3'>
+					<div>
+						<span className='text-3xl md:text-6xl font-semibold'>
+							Trabajamos por los derechos de las mujeres en México.
+						</span>
+					</div>
+					<div>
+						<span className='text-sm md:text-base'>
+							Mujeres por México en Chihuahua, A.C., nace en 1995 con un gran
+							compromiso social, especialmente con los grupos más
+							vulnerables.Trabajamos y luchamos por la formación integral de las
+							personas mediante la promoción, difusión y defensa de los derechos
+							humanos. Somos una Organización Civil incluyente y plural, no
+							partidista y sin fines de lucro intregrada por mujeres.
+							#NoEstasSola
+						</span>
+					</div>
+				</div>
+				<br />
+				<KnowMoreButton />
+			</div>
+		</div>
+	);
+};
+
+const Community = () => {
+	return (
+		<div className='flex flex-col md:pb-0 pb-5'>
+			<div className='text-secondary font-semibold text-3xl md:text-6xl text-center md:py-20 py-10'>
+				Únete a la comunidad
+			</div>
+			<div className='flex gap-x-20 justify-center pb-20 md:flex-row flex-col gap-y-5'>
+				<a href='testimonios'>
+					<div className='md:h-72 h-32 md:w-[530px] rounded-3xl relative'>
+						<div className='h-full w-full bg-primary absolute z-0 rounded-3xl'></div>
+						<div
+							className='h-full w-full text-white flex items-center justify-center cursor-pointer overflow-hidden absolute z-10 rounded-3xl hover:-translate-y-5 transition'
+							style={{
+								backgroundImage: `url(/Image/df90237f-f92c-47a8-a71b-8a5d4f885180.jpg)`,
+								backgroundSize: "cover",
+								backgroundPosition: "center",
+							}}
+						>
+							<div className='rounded-3xl text-3xl font-semibold z-10'>
+								Testimonios
+							</div>
+						</div>
+					</div>
+				</a>
+				<a href='blog'>
+					<div className='md:h-72 h-32 md:w-[530px] rounded-3xl relative'>
+						<div className='h-full w-full bg-primary absolute z-0 rounded-3xl'></div>
+						<div
+							className='h-full w-full text-white flex items-center justify-center cursor-pointer overflow-hidden absolute z-10 rounded-3xl hover:-translate-y-5 transition'
+							style={{
+								backgroundImage: `url(/Image/7b88dbf9-bd4d-4b8d-83d7-9df8e713f2d7.jpg)`,
+								backgroundSize: "cover",
+								backgroundPosition: "center",
+							}}
+						>
+							<div className='rounded-3xl text-3xl font-semibold z-10'>
+								Blog Educativo
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	);
+};
+
+const Contact = () => {
+	return (
+		<div className='flex justify-center items-center mb-6'>
+			<div className='flex bg-slate-100  rounded-2xl p-14 gap-6 md:gap-12 md:flex-row flex-col-reverse justify-center items-center'>
+				<div className='flex flex-col  gap-3 '>
+					<div className='text-2xl md:text-5xl font-bold'>Contáctanos</div>
+					<div className='leading-none text-gray-500 flex flex-col gap-2 text-base md:text-xl'>
+						<div>
+							<span className='font-bold italic'>
+								Oficinas: <br />
+							</span>
+							C. Ignacio Allende #419 <br />
+							Col. Centro, C.P 31000 <br />
+							Chihuahua, Chih. MX <br />
+							Tel. (614) 410 10 19 <br />
+						</div>
+						<div>
+							<span className='font-bold italic'>
+								Modulo de Atención a Víctimas <br />
+							</span>
+							Centro de Justicia para las Mujeres (CEJUM) <br />
+							Edificio Paloma Angélica Escobar Ledezma <br />
+							C.51° y Rosales #1203 <br />
+							Tel. (614) 429 33 00 ext. 10747 <br />
+							Whatsapp (614) 128 31 10
+						</div>
+					</div>
+				</div>
+				<div className='md:w-96 w-64'>
+					<Image
+						src='/logo_descless.png'
+						alt='Mujeres por Mexico'
+						width={612}
+						height={444}
+					/>
+				</div>
+			</div>
+		</div>
+	);
+};
 
 export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+	return (
+		<main className='flex min-h-screen flex-col items-center'>
+			<div className='flex flex-col h-screen'>
+				<Navbar />
+				<Hero />
+			</div>
+			<div className='h-screen'>
+				<AboutUs />
+			</div>
+			<Community />
+			<Contact />
+			<Terms />
+		</main>
+	);
 }
