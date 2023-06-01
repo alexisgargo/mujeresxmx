@@ -1,6 +1,6 @@
 import Navbar from "../components/navbar/Navbar";
 import Terms from "../components/Terms";
-import KnowMoreButton from "../components/KnowMoreButton";
+import Button from "../components/Button";
 
 export const metadata = {
 	title: "Sobre Nosotras",
@@ -39,7 +39,7 @@ const Us = () => {
 					de los grupos vulnerables en México.{" "}
 				</p>
 				<div className='text-base'>
-					<KnowMoreButton />
+					<Button label='Conocer más' primary />
 				</div>
 			</div>
 			<div className='h-fithidden md:w-96 md:flex flex-col justify-center items-center flex-shrink gap-y-16'>

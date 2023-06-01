@@ -1,6 +1,7 @@
 import Navbar from "../components/navbar/Navbar";
 import Terms from "@/app/components/Terms";
 import React from "react";
+import Button from "../components/Button";
 
 export const metadata = {
 	title: "Testimonios",
@@ -60,9 +61,7 @@ export default function Testimonials() {
 						empoderar a más muejeres a luchar por sus derechos <br /> y por una
 						vida digna para todas.
 					</p>
-					<button className='bg-primary rounded-full text-white px-4 py-2 mt-4'>
-						Compartir tu experiencia
-					</button>
+					<Button primary label='Comparte tu experiencia' />
 				</div>
 			</div>
 			{testimonials.map((testimonial) => (

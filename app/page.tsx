@@ -1,9 +1,8 @@
 import Image from "next/image";
 import Navbar from "./components/navbar/Navbar";
 import Terms from "./components/Terms";
-import ContactButton from "./components/ContactButton";
-import KnowMoreButton from "./components/KnowMoreButton";
 import ProgressiveImage from "./components/ProgressiveImage";
+import Button from "./components/Button";
 
 const Hero = () => {
 	return (
@@ -26,7 +25,7 @@ const Hero = () => {
 						</div>
 					</div>
 					<br />
-					<ContactButton />
+					<Button label='Contáctanos' primary />
 				</div>
 			</div>
 			<ProgressiveImage
@@ -66,7 +65,7 @@ const AboutUs = () => {
 					</div>
 				</div>
 				<br />
-				<KnowMoreButton />
+				<Button label='Conocer más' />
 			</div>
 		</div>
 	);
