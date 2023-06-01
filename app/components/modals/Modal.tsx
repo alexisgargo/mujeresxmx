@@ -14,8 +14,8 @@ interface ModalProps {
 	footer?: React.ReactElement;
 	actionLabel: string;
 	disabled?: boolean;
-	secondaryActionLabel?: string;
 	secondaryAction?: () => void;
+	secondaryActionLabel?: string;
 }
 
 const Modal: React.FC<ModalProps> = ({
@@ -24,40 +24,48 @@ const Modal: React.FC<ModalProps> = ({
 	onSubmit,
 	title,
 	body,
-	footer,
 	actionLabel,
+	footer,
 	disabled,
-	secondaryActionLabel,
 	secondaryAction,
+	secondaryActionLabel,
 }) => {
-	const [showing, setShowing] = useState(false);
-
-	if (!isOpen) return null;
+	const [showModal, setShowModal] = useState(isOpen);
 
 	useEffect(() => {
-		setShowing(isOpen);
+		setShowModal(isOpen);
 	}, [isOpen]);
 
 	const handleClose = useCallback(() => {
-		if (disabled) return;
+		if (disabled) {
+			return;
+		}
 
-		setShowing(false);
+		setShowModal(false);
 		setTimeout(() => {
 			onClose();
 		}, 300);
 	}, [onClose, disabled]);
 
 	const handleSubmit = useCallback(() => {
-		if (disabled) return;
+		if (disabled) {
+			return;
+		}
 
 		onSubmit();
 	}, [onSubmit, disabled]);
 
 	const handleSecondaryAction = useCallback(() => {
-		if (disabled || !secondaryAction) return;
+		if (disabled || !secondaryAction) {
+			return;
+		}
 
 		secondaryAction();
-	}, [disabled, secondaryAction]);
+	}, [secondaryAction, disabled]);
+
+	if (!isOpen) {
+		return null;
+	}
 
 	return (
 		<>
@@ -66,14 +74,14 @@ const Modal: React.FC<ModalProps> = ({
 					{/*content*/}
 					<div
 						className={`translate duration-300 h-full ${
-							showing
+							showModal
 								? "translate-y-0 opacity-100"
 								: "translate-y-full opacity-0"
 						}`}
 					>
-						<div className='translate h-full md:h-auto border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none'>
+						<div className='translate h-full md:h-auto border-0 rounded-3xl shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none'>
 							{/*header*/}
-							<div className='flex items-center p-6 rounded-t justify-center border-2 relative'>
+							<div className='flex items-center p-6 rounded-t-3xl justify-center border-2 relative'>
 								<button className='p-3 border-0 transition absolute left-8 hover:bg-slate-300/80 rounded-full'>
 									<FiX size={18} onClick={handleClose} />
 								</button>
