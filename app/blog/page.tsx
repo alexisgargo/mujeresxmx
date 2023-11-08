@@ -11,12 +11,13 @@ export const metadata = {
 interface BlogCardProps {
 	image: string;
 	title: string;
+	href: string;
 }
 
 const BlogCard = (props: BlogCardProps) => {
 	return (
 		<div className='w-full pb-6 text-center '>
-			<a href=''>
+			<a href={`/blog/blog-pages/${props.href}`}>
 				<div className='flex justify-center items-center'>
 					<div className='xl:w-96 relative xl:h-72 mb-4 w-[200px] h-[150px]'>
 						<Image
@@ -43,26 +44,32 @@ export default function Testimonials() {
 		{
 			image: "10ce0bdfec1780ef49f055d88489deb8.jpeg",
 			title: "Tipos de violencia y como identificarlas",
+			href: "tipos-de-violencia",
 		},
 		{
 			image: "48541d2bb64b1f0d7fc4168ed3739e9c.jpeg",
 			title: "¿Qué es el feminismo? Mitos y Verdades",
+			href: "que-es-el-feminismo",
 		},
 		{
 			image: "1572347985879IgualdadEstandar.jpeg",
 			title: "¿Qué es la igualdad de género?",
+			href: "que-es-la-igualdad-de-genero",
 		},
 		{
 			image: "78598bc2099ead6387dad9fbd0d5b427.jpeg",
 			title: "Medidas de prevención ante la violencia",
+			href: "medidas-de-prevencion",
 		},
 		{
 			image: "171bd3fd80ac8a4a97ff05f307149c7e.jpeg",
 			title: "¿Cuáles son mis derechos? ¿Cómo los protejo?",
+			href: "cuales-son-mis-derechos",
 		},
 		{
 			image: "por-qué-es-importante-la-dignidad.jpeg",
 			title: "¿Qué es la dignidad humana?",
+			href: "que-es-la-dignidad-humana",
 		},
 	];
 
@@ -82,7 +89,7 @@ export default function Testimonials() {
 			</div>
 			<div className='grid grid-cols-2 md:grid-cols-3 w-screen  md:w-5/6 mb-7 '>
 				{blogCards.map((card) => (
-					<BlogCard image={card.image} title={card.title} key={card.title} />
+					<BlogCard image={card.image} title={card.title} key={card.title} href={card.href}/>
 				))}
 			</div>
 			<Terms />
