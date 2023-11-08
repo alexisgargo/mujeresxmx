@@ -11,7 +11,7 @@ const Terms = () => {
 				<ul className='overflow-hidden flex gap-4'>
 					<li className='float-left mr-14'>Términos de Privacidad</li>
 					<li>
-						<a href='https://www.facebook.com'>
+						<a href='https://www.facebook.com/mujerespormexicocuu/'>
 							<Image
 								src='/Facebook.svg'
 								width={24}
@@ -21,7 +21,7 @@ const Terms = () => {
 						</a>
 					</li>
 					<li>
-						<a href='https://instagram.com'>
+						<a href='https://instagram.com/mujerespormexicocuu?igshid=OGQ5ZDc2ODk2ZA=='>
 							<Image
 								src='/Instagram.svg'
 								width={24}
