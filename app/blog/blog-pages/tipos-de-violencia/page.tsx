@@ -50,7 +50,7 @@ const entry = {
           la capacidad de elección personal de la víctima.
         </li>
         <li>
-          <b>Economica:</b> implica utilizar el dinero para ejercer poder y
+          <b>Económica:</b> implica utilizar el dinero para ejercer poder y
           control de manera perjudicial sobre una persona. Esto puede incluir la
           retención de ingresos, la prohibición de gastar dinero en beneficio
           propio o de la familia, y negar el acceso a recursos financieros para
@@ -58,14 +58,14 @@ const entry = {
           delitos y están sujetas a sanciones legales.
         </li>
         <li>
-          <b>De genero:</b> implica actos violentos dirigidos hacia una persona
+          <b>De género:</b> implica actos violentos dirigidos hacia una persona
           debido a su género o preferencia sexual. En muchos casos, estos actos
           están dirigidos a mujeres y están relacionados con la creencia de
           algunos hombres de tener control sobre ellas, a menudo aprovechando
           situaciones de vulnerabilidad, desigualdad y poder. También puede
           afectar a hombres que no se adhieren a las normas culturales
           tradicionales de masculinidad, como en casos de violencia homofóbica o
-          cuando expresan emociones o comportamientos considerados "femeninos".
+          cuando expresan emociones o comportamientos considerados &quot;femeninos&quot;.
         </li>
       </ul>
     </div>
