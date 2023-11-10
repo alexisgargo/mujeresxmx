@@ -9,7 +9,7 @@ const Terms = () => {
 			</div>
 			<div>
 				<ul className='overflow-hidden flex gap-4'>
-					<li className='float-left mr-14'>Términos de Privacidad</li>
+					<li className='float-left mr-14'>Redes Sociales</li>
 					<li>
 						<a href='https://www.facebook.com/mujerespormexicocuu/'>
 							<Image
