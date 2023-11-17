@@ -7,7 +7,7 @@ La pagina se actualiza automaticamente con los cambios a la branch main, por lo 
 
 El estatus e historial de los deploys se puede ver en https://app.netlify.com/sites/mujeresxmx/deploys
 
-[Sugerencia] evitar trabajar directamente en main y asegurarse que el sitio funciona localmente antes de integrarlo
+* Sugerencia: evitar trabajar directamente en main y asegurarse que el sitio funciona localmente antes de integrarlo
 
 ## Agregar entrada a blog
 
@@ -18,7 +18,7 @@ El estatus e historial de los deploys se puede ver en https://app.netlify.com/si
 4. Siguiendo la estructura existente, escribir el nombre de la imagen recien agregada, el titulo que se mostrara y el nombre de la carpeta donde estara la pagina. De preferencia usar un nombre similar al titulo
 ![Entradas](/readme%20images/blogcards.png)
 
-[IMPORTANTE] solamente usar letras sin acentos ni espacios, numeros y guiones(-) en el nombre de la carpeta. No usar espacio( ), guion bajo(_), acentos ni caracteres especiales.
+* IMPORTANTE solamente usar letras sin acentos ni espacios, numeros y guiones(-) en el nombre de la carpeta. No usar espacio( ), guion bajo(_), acentos ni caracteres especiales.
 
 # Agregar pagina
 1. Crear una carpeta con exactamente el mismo nombre utilizado en el paso previo
