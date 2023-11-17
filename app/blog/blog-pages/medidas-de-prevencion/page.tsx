@@ -10,10 +10,12 @@ const entry = {
   title: "Medidas de prevención ante la violencia",
   text: (
     <div>
-      <ol className="list-decimal">
+      <ol className="list-decimal m-10">
         <li>Escucha y cree a las sobrevivientes</li>
         <li>Enseñanza a nuevas generaciones</li>
         <li>Exige respuesta y servicios</li>
+        <li>Apoyar a víctimas</li>
+        <li>Fomentar la paz</li>
       </ol>
     </div>
   ),
