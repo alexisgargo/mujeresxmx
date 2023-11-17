@@ -41,6 +41,11 @@ const BlogCard = (props: BlogCardProps) => {
 
 export default function Testimonials() {
 	const blogCards = [
+		// {
+		// 	image: "nombre-de-la-imagen.jpeg",
+		// 	title: "Título de la publicación",
+		// 	href: "carpeta-de-la-publicacion",
+		// },
 		{
 			image: "10ce0bdfec1780ef49f055d88489deb8.jpeg",
 			title: "Tipos de violencia y como identificarlas",

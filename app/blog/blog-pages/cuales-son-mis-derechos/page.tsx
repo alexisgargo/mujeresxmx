@@ -10,7 +10,7 @@ const entry = {
   title: "¿Cuáles son mis derechos? ¿Cómo los protejo?",
   text: (
     <div>
-      <ul>
+      <ul className="indent-10">
         <li>Derecho a la vida</li>
         <li>Derecho a la igualdad</li>
         <li>Derecho a la integridad y seguridad personal</li>
@@ -27,7 +27,16 @@ const entry = {
         <li>Derecho a la alimentación</li>
         <li>Derecho al trabajo</li>
         <li>Derecho a la seguridad social</li>
+        <li>Derecho a la privacidad</li>
+        <li>Derecho al trabajo y condiciones laborales justas</li>
       </ul>
+      <br />
+      <p className="md:text-xl text-gray-900">
+        Estos son algunos derechos humanos, si tienes mas dudas puedes contactarnos y las resolveremos.
+        <br />
+        <br />
+        Para proteger los derechos primero se debe de estar bien informado respecto a ellos, tener documentos que respalden tus derechos, en cada de ser violados, tomar medidas y denunciar en organizaciones defensoras de derechos humanos.
+      </p>
     </div>
   ),
 };
