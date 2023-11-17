@@ -1,4 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+###### Mujeres por Mexico en Chihuahua
+
+
+## Actualizar la pagina web
+
+La pagina se actualiza automaticamente con los cambios a la branch main, por lo que cualquier actualizacion a main se vera reflejada en la pagina en unos minutos
+
+El estatus e historial de los deploys se puede ver en https://app.netlify.com/sites/mujeresxmx/deploys
+
+[Sugerencia] evitar trabajar directamente en main y asegurarse que el sitio funciona localmente antes de integrarlo
+
+## Agregar entrada a blog
+
+# Agregar en la lista 
+1. Agregar imagen de miniatura en /public/Image
+2. Abrir /app/blog/page.tsx
+3. Dentro de Testimonials, agregar un nuevo elemento al final de blogCards
+4. Siguiendo la estructura existente, escribir el nombre de la imagen recien agregada, el titulo que se mostrara y el nombre de la carpeta donde estara la pagina. De preferencia usar un nombre similar al titulo
+![Entradas](/readme%20images/blogcards.png)
+
+[IMPORTANTE] solamente usar letras sin acentos ni espacios, numeros y guiones(-) en el nombre de la carpeta. No usar espacio( ), guion bajo(_), acentos ni caracteres especiales.
+
+# Agregar pagina
+1. Crear una carpeta con exactamente el mismo nombre utilizado en el paso previo
+![Carpeta](/readme%20images/carpetas.png)
+2. Copiar el archivo /app/blog/blog-pages/plantilla/page.tsx y pegarlo en la carpeta creada
+3. Modificar el apartado de entry siguiendo la estructura existente
+
+![Estructura](/readme%20images/plantilla.png)
+
 
 ## Getting Started
 
@@ -14,9 +43,6 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
 ## Learn More
 
@@ -26,9 +52,3 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
