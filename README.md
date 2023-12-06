@@ -23,7 +23,9 @@ El estatus e historial de los deploys se puede ver en https://app.netlify.com/si
 
 ### Agregar pagina
 1. Crear una carpeta con exactamente el mismo nombre utilizado en el paso previo
+
 ![Carpeta](/readme%20images/carpetas.png)
+
 2. Copiar el archivo /app/blog/blog-pages/plantilla/page.tsx y pegarlo en la carpeta creada
 3. Modificar el apartado de entry siguiendo la estructura existente
 
