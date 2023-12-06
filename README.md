@@ -1,8 +1,8 @@
 ###### Mujeres por Mexico en Chihuahua
 
-[Página](https://mujeresxmx.netlify.app)
+[Acceso a la página](https://mujeresxmx.netlify.app)
 
-## Actualizar la pagina web
+# Actualizar la pagina web
 
 La pagina se actualiza automaticamente con los cambios a la branch main, por lo que cualquier actualizacion a main se vera reflejada en la pagina en unos minutos
 
@@ -12,7 +12,7 @@ El estatus e historial de los deploys se puede ver en https://app.netlify.com/si
 
 ## Agregar entrada a blog
 
-# Agregar en la lista 
+### Agregar en la lista 
 1. Agregar imagen de miniatura en /public/Image
 2. Abrir /app/blog/page.tsx
 3. Dentro de Testimonials, agregar un nuevo elemento al final de blogCards
@@ -21,7 +21,7 @@ El estatus e historial de los deploys se puede ver en https://app.netlify.com/si
 
 * IMPORTANTE solamente usar letras sin acentos ni espacios, numeros y guiones(-) en el nombre de la carpeta. No usar espacio( ), guion bajo(_), acentos ni caracteres especiales.
 
-# Agregar pagina
+### Agregar pagina
 1. Crear una carpeta con exactamente el mismo nombre utilizado en el paso previo
 ![Carpeta](/readme%20images/carpetas.png)
 2. Copiar el archivo /app/blog/blog-pages/plantilla/page.tsx y pegarlo en la carpeta creada
